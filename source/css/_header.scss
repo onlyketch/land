@@ -1,0 +1,42 @@
+
+.header {
+    padding: 20px 0;
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__left {
+        display: flex;
+    }
+
+    &__logo {
+        text-decoration: none;
+        font-family: 'Roboto Black', sans-serif;
+        color: #FF8400;
+        text-transform: uppercase;
+        margin-right: 150px;
+    }
+
+    &__name {
+        color: #121214;
+    }
+
+    &__right {
+    }
+
+    &__order {
+        text-decoration: none;
+        font-family: 'RobotoCondensed Regular', sans-serif;
+        color: #FF8400;
+        margin-right: 30px;
+    }
+
+    &__phone {
+        text-decoration: none;
+        font-family: 'RobotoCondensed Bold', sans-serif;
+        color: #000000;
+    }
+}
+

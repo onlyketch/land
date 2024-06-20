@@ -1,0 +1,54 @@
+.why {
+    margin-top: 86px;
+    background-color: #F2F2F2;
+    padding: 61px 0 68px 0;
+
+    &__title {
+        font-family: 'RobotoCondensed Medium', sans-serif;
+        color: #292824;
+        text-align: center;
+    }
+
+    &__items {
+        margin-top: 82px;
+    }
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 35px;
+
+        .row-first {
+            max-width: 419px;
+        }
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        border: 3px solid #FFFFFF;
+        max-width: 641px;
+        box-sizing: border-box;
+        height: 141px;
+        padding: 42px 0 32px 8px;
+    }
+
+    &__item-num {
+        font-family: 'RobotoCondensed Medium', sans-serif;
+        font-size: 48px;
+        line-height: 48px;
+        color: #FF8400;
+        box-sizing: border-box;
+        padding: 10px 13px;
+        border-right: 1px solid #C9C9C9;
+    }
+
+    &__item-text {
+        padding: 0 25px 0 23px;
+    }
+}
+.container {
+}
+.orange {
+    color: #FF8400;
+}

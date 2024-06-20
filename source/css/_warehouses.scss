@@ -1,0 +1,125 @@
+.warehouses {
+    padding: 85px 0;
+
+    .object-name {
+        text-align: center;
+    }
+
+    &__title {
+        text-align: center;
+        color: #292824;
+    }
+
+    &__slider {
+        position: relative;
+        margin-top: 61px;
+
+        .slick-list {
+            overflow: hidden;
+        }
+        .slick-track{
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .slick-arrow {
+            position: absolute;
+            top: -134px; //-134
+            z-index: 10;
+            font-size: 0;
+            width: 84px;
+            height: 84px;
+            border-radius: 50%;
+            background-color: #F2F2F2;
+            border: none;
+            cursor: pointer;
+        }
+
+        .slick-arrow.slick-prev{
+            left: 0;
+            background-image: url('../images/arr-right.svg');
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: 12px 21px;
+        }
+
+        .slick-arrow.slick-next{
+            right: 0;
+            background-image: url('../images/arr-left.svg');
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: 12px 21px;
+        }
+    }
+
+    &__item {
+        border: 1px solid #C9C9C9;
+        max-width: 419px;
+        box-sizing: border-box;
+    }
+
+    &__item-top {
+        padding: 32px;
+    }
+
+    &__item-size {
+        font-family: 'RobotoCondensed Bold', sans-serif;
+        font-size: 32px;
+        line-height: 36px;
+        color: #224285;
+    }
+
+    &__item-text {
+        font-family: 'Roboto Regular', sans-serif;
+        font-size: 16px;
+        line-height: 20px;
+        color: #666666;
+        margin-top: 4px;
+    }
+
+    &__item-bottom {
+        position: relative;
+        padding: 32px;
+        background-color: #F5F5F5;
+    }
+
+    &__item-bottom-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__item-howmuch {
+        font-family: 'RobotoCondensed Medium', sans-serif;
+        font-size: 20px;
+        line-height: 20px;
+        color: #FF8400;
+
+        .gray {
+            display: block;
+            margin-top: 11px;
+            font-family: 'Roboto Regular', sans-serif;
+            font-size: 16px;
+            line-height: 20px;
+            color: #626262;
+        }
+    }
+
+    &__item-price {
+        font-family: 'RobotoCondensed Bold', sans-serif;
+        font-size: 32px;
+        line-height: 36px;
+        color: #292824;
+    }
+}
+
+.divider {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -33px;
+    margin-left: -10px;
+    width: 1px;
+    height: 67px;
+    background-color: #C9C9C9;
+}
