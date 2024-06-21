@@ -39,6 +39,11 @@ $(document).ready(function() {
         e.preventDefault();
     });
 
+    Fancybox.bind('[data-fancybox="modal"]', {
+      groupAttr: false,
+   });
+
+
     let burg = document.getElementById('burg');
     let hiddenMenu = document.querySelector('.hidden');
     let hiddenNav = document.querySelectorAll('.hidden__nav');
@@ -58,5 +63,7 @@ $(document).ready(function() {
         hiddenMenu.classList.toggle('hidden-visible');
       });
     });
+
+
     
 });
