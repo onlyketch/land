@@ -17,6 +17,10 @@
         color: #FF8400;
         text-transform: uppercase;
         margin-right: 150px;
+
+        @media (max-width: 1140px) {
+            margin-right: 0;
+        }
     }
 
     &__name {
@@ -31,12 +35,26 @@
         font-family: 'RobotoCondensed Regular', sans-serif;
         color: #FF8400;
         margin-right: 30px;
+
+        @media (max-width: 770px) {
+            display: none;
+        }
     }
 
     &__phone {
         text-decoration: none;
         font-family: 'RobotoCondensed Bold', sans-serif;
         color: #000000;
+
+        @media (max-width: 770px) {
+            display: none;
+        }
     }
+
+    .navigation {
+        @media (max-width: 1140px) {
+            display: none;
+        }
+    } 
 }
 

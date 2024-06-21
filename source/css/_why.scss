@@ -3,6 +3,10 @@
     background-color: #F2F2F2;
     padding: 61px 0 68px 0;
 
+    @media (max-width: 770px) {
+        margin-top: 35px;
+    }
+
     &__title {
         font-family: 'RobotoCondensed Medium', sans-serif;
         color: #292824;
@@ -20,6 +24,15 @@
 
         .row-first {
             max-width: 419px;
+
+            @media (max-width: 1370px) {
+                max-width: 100%;
+            }
+        }
+
+        @media (max-width: 1370px) {
+            flex-direction: column;
+            margin-bottom: 0;
         }
     }
 
@@ -31,6 +44,17 @@
         box-sizing: border-box;
         height: 141px;
         padding: 42px 0 32px 8px;
+
+        @media (max-width: 1370px) {
+            max-width: 100%;
+            margin-bottom: 25px;
+        }
+
+        @media (max-width: 770px) {
+            height: auto;
+            padding: 8px;
+        }
+
     }
 
     &__item-num {

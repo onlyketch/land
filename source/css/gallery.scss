@@ -2,6 +2,7 @@
 
     &__slider {
         position: relative;
+
         .slick-list {
             overflow: hidden;
         }
@@ -22,6 +23,18 @@
             border: none;
             cursor: pointer;
             margin-top: -62px;
+
+            @media (max-width: 1430px) {
+                width: 84px;
+                height: 84px;
+                margin-top: -42px;
+            }
+
+            @media (max-width: 770px) {
+                width: 40px;
+                height: 40px;
+                margin-top: -20px;
+            }
         }
 
         .slick-arrow.slick-prev{
@@ -30,6 +43,10 @@
             background-repeat: no-repeat;
             background-position: center center;
             background-size: 12px 21px;
+
+            @media (max-width: 1430px) {
+                left: 15px;
+            }
         }
 
         .slick-arrow.slick-next{
@@ -38,6 +55,10 @@
             background-repeat: no-repeat;
             background-position: center center;
             background-size: 12px 21px;
+
+            @media (max-width: 1430px) {
+                right: 15px;
+            }
         }
     }
 
@@ -50,6 +71,10 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
+        }
+
+        @media (max-width: 770px) {
+            height: 360px;
         }
     }
 }

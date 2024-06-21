@@ -2,9 +2,16 @@
     
     .container {
         position: relative;
+
+        iframe {
+            @media (max-width: 770px) {
+                height: 370px;
+            }
+        }
     }
 
     height: 689px;
+
     &__content-box {
         position: absolute;
         top: 81px;
@@ -13,6 +20,14 @@
         max-width: 440px;
         box-sizing: border-box;
         padding: 40px 40px 34px 44px;
+
+        @media (max-width: 1070px) {
+            position: static;
+            max-width: 100%;
+            padding: 0;
+            background-color: transparent;
+            margin-bottom: 35px;
+        }
     }
 
     &__title {
@@ -24,5 +39,13 @@
 
     &__btn {
         margin-top: 52px;
+
+        @media (max-width: 1070px) {
+            margin-top: 26px;
+        }
+    }
+
+    @media (max-width: 1070px) {
+        height: auto;
     }
 }
