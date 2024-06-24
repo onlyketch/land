@@ -1,6 +1,6 @@
 .why {
     margin-top: 86px;
-    background-color: #F2F2F2;
+    background-color: #224285;
     padding: 61px 0 68px 0;
 
     @media (max-width: 770px) {
@@ -9,12 +9,16 @@
 
     &__title {
         font-family: 'RobotoCondensed Medium', sans-serif;
-        color: #292824;
+        color: #FFFFFF;
         text-align: center;
     }
 
     &__items {
         margin-top: 82px;
+
+        @media (max-width: 770px) {
+            margin-top: 40px; 
+        }
     }
 
     &__row {
@@ -40,6 +44,7 @@
         display: flex;
         align-items: center;
         border: 3px solid #FFFFFF;
+        background-color: #F2F2F2;
         max-width: 641px;
         box-sizing: border-box;
         height: 141px;
